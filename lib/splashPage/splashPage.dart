@@ -12,7 +12,7 @@ class SplashPage extends StatefulWidget {
 class _SplashPageState extends State<SplashPage> {
   @override
   Widget build(BuildContext context) {
-    Future.delayed(const Duration(seconds: 8), () {
+    Future.delayed(const Duration(seconds: 11), () {
       Navigator.of(context).pushReplacement(
           MaterialPageRoute(builder: (context) => const HomePage()));
     });
@@ -36,7 +36,7 @@ class _SplashPageState extends State<SplashPage> {
         child: Padding(
           padding: const EdgeInsets.only(top: 8.0),
           child: Container(
-              height: 130,
+              height: 170,
               width: MediaQuery.of(context).size.width / 1.20,
               // color: Colors.pink,
               child: Column(
@@ -58,7 +58,7 @@ class _SplashPageState extends State<SplashPage> {
                         )),
                   ),
                   const SizedBox(
-                    height: 25,
+                    height: 50,
                   ),
                   const CircularProgressIndicator(
                     color: Colors.purple,
